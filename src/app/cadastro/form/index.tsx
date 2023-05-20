@@ -1,7 +1,7 @@
 "use client";
 
 import { dataCoutryCity, dataCurse } from "@/Mock/Ingressantes";
-import { Select } from "@/components";
+import { Button, Select } from "@/components";
 import Input from "@/components/Input";
 import { useState } from "react";
 
@@ -12,11 +12,12 @@ const Form = () => {
   const [citySelected, setCitySelected] = useState<number>(1);
 
   return (
-    <form>
+    <form className="flex gap-4 flex-col w-full rounded-sm">
       <Input
-        label=""
+        label="Nome"
         propsInput={{
           disabled: false,
+          placeholder: "Digite o nome do Ingressante",
           value: name,
           onChange: (e) => setName(e.target.value),
         }}
@@ -56,6 +57,13 @@ const Form = () => {
           onChange: (e) => setCitySelected(Number(e.target.value)),
         }}
       />
+      <div className="flex justify-between w-full">
+        <Button
+          text="Voltar"
+          propsButton={{ type: "reset", onClick: () => {} }}
+        />
+        <Button text="Gravar" propsButton={{ type: "submit" }} />
+      </div>
     </form>
   );
 };
