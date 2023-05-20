@@ -5,7 +5,11 @@ type IProps = {
 };
 
 const Textbg: React.FC<IProps> = ({ text }) => {
-  return <p className="text-white text-lg bg-sky-800 h-8">{text}</p>;
+  return (
+    <p className="text-white text-lg font-semibold font bg-sky-800 mx-5 p-2 rounded-sm">
+      {text}
+    </p>
+  );
 };
 
 export default Textbg;

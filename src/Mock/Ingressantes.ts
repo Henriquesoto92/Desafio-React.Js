@@ -1,18 +1,39 @@
-export type Curse = string[];
+import { CoutryCity, Curse } from "@/interface";
 
-export type CoutryCity = { name: string; city: string[] }[];
-
-const dataCurse: Curse = ["Matemática", "Letras", "Geografia"];
+const dataCurse: Curse = [
+  { value: "matematica", label: "Matemática" },
+  { value: "letras", label: "Letras" },
+  { value: "geografia", label: "Geografia" },
+];
 
 const dataCoutryCity: CoutryCity = [
   {
-    name: "São Paulo",
-    city: ["Mogi das Cruzes", "Suzano", "Poá", "Guararema"],
+    value: "saoPaulo",
+    label: "São Paulo",
+    citys: [
+      { value: "mogiDasCruzes", label: "Mogi das Cruzes" },
+      { value: "suzano", label: "Suzano" },
+      { value: "poa", label: "Poá" },
+      { value: "guararema", label: "Guararema" },
+    ],
   },
-  { name: "Rio de Janeiro", city: ["Angra dos Reis", "Niterói", "Itaboraí"] },
   {
-    name: "Minas Gerais",
-    city: ["Belo Horizonte", "Monte Azul", "Muzambinho"],
+    value: "rioDeJaneiro",
+    label: "Rio de Janeiro",
+    citys: [
+      { value: "angradosReis", label: "Angra dos Reis" },
+      { value: "niterói", label: "Niterói" },
+      { value: "itaboraí", label: "Itaboraí" },
+    ],
+  },
+  {
+    value: "MinasGerais",
+    label: "Minas Gerais",
+    citys: [
+      { value: "beloHorizonte", label: "Belo Horizonte" },
+      { value: "monteAzul", label: "Monte Azul" },
+      { value: "Muzambinho", label: "Muzambinho" },
+    ],
   },
 ];
 
