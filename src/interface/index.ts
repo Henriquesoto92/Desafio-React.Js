@@ -1,12 +1,12 @@
 export type OptionsProps = {
-  value: string;
+  id: number;
   label: string;
 };
 
 export type Curse = OptionsProps[];
 
 export type CoutryCity = {
-  value: string;
+  id: number;
   label: string;
   citys: OptionsProps[];
 }[];

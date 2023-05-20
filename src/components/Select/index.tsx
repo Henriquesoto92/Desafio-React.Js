@@ -1,11 +1,10 @@
 import React from "react";
+import { OptionsProps } from "@/interface";
 
 type IProps = {
   label: string;
-  options: { value: string; label: string }[] | undefined;
-  value?: string;
-  onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  propsSelect?: React.SelectHTMLAttributes<HTMLSelectElement>;
+  options: OptionsProps[] | undefined;
+  propsSelect: React.SelectHTMLAttributes<HTMLSelectElement>;
 };
 
 const Select: React.FC<IProps> = (props) => {
@@ -15,10 +14,10 @@ const Select: React.FC<IProps> = (props) => {
       <select
         id={props.label}
         className="border-2 rounded-md"
-        onChange={props.onChange}
+        {...props.propsSelect}
       >
         {props?.options?.map((option) => (
-          <option value={option.value} key={option.value}>
+          <option value={option.id} key={`${option.label}${option.id}`}>
             {option.label}
           </option>
         ))}

@@ -1,38 +1,38 @@
 import { CoutryCity, Curse } from "@/interface";
 
 const dataCurse: Curse = [
-  { value: "matematica", label: "Matemática" },
-  { value: "letras", label: "Letras" },
-  { value: "geografia", label: "Geografia" },
+  { id: 1, label: "Matemática" },
+  { id: 2, label: "Letras" },
+  { id: 3, label: "Geografia" },
 ];
 
 const dataCoutryCity: CoutryCity = [
   {
-    value: "saoPaulo",
+    id: 1,
     label: "São Paulo",
     citys: [
-      { value: "mogiDasCruzes", label: "Mogi das Cruzes" },
-      { value: "suzano", label: "Suzano" },
-      { value: "poa", label: "Poá" },
-      { value: "guararema", label: "Guararema" },
+      { id: 1, label: "Mogi das Cruzes" },
+      { id: 2, label: "Suzano" },
+      { id: 3, label: "Poá" },
+      { id: 4, label: "Guararema" },
     ],
   },
   {
-    value: "rioDeJaneiro",
+    id: 2,
     label: "Rio de Janeiro",
     citys: [
-      { value: "angradosReis", label: "Angra dos Reis" },
-      { value: "niterói", label: "Niterói" },
-      { value: "itaboraí", label: "Itaboraí" },
+      { id: 1, label: "Angra dos Reis" },
+      { id: 2, label: "Niterói" },
+      { id: 3, label: "Itaboraí" },
     ],
   },
   {
-    value: "MinasGerais",
+    id: 3,
     label: "Minas Gerais",
     citys: [
-      { value: "beloHorizonte", label: "Belo Horizonte" },
-      { value: "monteAzul", label: "Monte Azul" },
-      { value: "Muzambinho", label: "Muzambinho" },
+      { id: 1, label: "Belo Horizonte" },
+      { id: 2, label: "Monte Azul" },
+      { id: 3, label: "Muzambinho" },
     ],
   },
 ];
