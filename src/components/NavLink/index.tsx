@@ -13,7 +13,7 @@ const NavLink: React.FC<IProps> = (props) => {
     <li>
       <Link
         href={props.href}
-        className="flex items-center bg-sky-800 gap-2 mx-5 p-2 "
+        className="flex items-center bg-sky-800 gap-2 mx-5 p-2 hover:bg-sky-700 transition-all duration-300"
       >
         <Image
           src={props.icon}

@@ -10,7 +10,7 @@ const Label: React.FC<IProps> = (props) => {
     <label
       htmlFor={props.label}
       {...props.propsLabel}
-      className="font-semibold"
+      className="font-semibold ml-2.5"
     >
       {props.label}
     </label>

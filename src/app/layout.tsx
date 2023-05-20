@@ -54,7 +54,7 @@ export default function RootLayout({
             </nav>
           </div>
           <hr />
-          <div className="grid place-content-center w-full min-h-screen bg-slate-100">
+          <div className="flex items-center justify-center w-full min-h-screen bg-slate-100">
             <Hamburguer />
             {children}
           </div>

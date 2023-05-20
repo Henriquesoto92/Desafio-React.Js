@@ -1,11 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import { dataCoutryCity, dataCurse } from "@/Mock/Ingressantes";
 import { Button, Select } from "@/components";
 import Input from "@/components/Input";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Form = () => {
+  const router = useRouter();
   const [name, setName] = useState<string>("");
   const [CurseSelected, setCurseSelected] = useState<number>(1);
   const [countrySelected, setCountrySelected] = useState<number>(1);
@@ -57,12 +59,20 @@ const Form = () => {
           onChange: (e) => setCitySelected(Number(e.target.value)),
         }}
       />
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between w-full mt-2">
         <Button
+          classProps="bg-yellow-500 hover:bg-yellow-400"
           text="Voltar"
-          propsButton={{ type: "reset", onClick: () => {} }}
+          propsButton={{
+            type: "reset",
+            onClick: () => router.push("/"),
+          }}
         />
-        <Button text="Gravar" propsButton={{ type: "submit" }} />
+        <Button
+          classProps="bg-emerald-600 hover:bg-emerald-500"
+          text="Gravar"
+          propsButton={{ type: "submit" }}
+        />
       </div>
     </form>
   );
