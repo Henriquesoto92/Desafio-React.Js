@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { dataCoutryCity, dataCurse } from "@/Mock/Ingressantes";
-import { Button, Select } from "@/components";
-import Input from "@/components/Input";
 import { useRouter } from "next/navigation";
+import { dataCoutryCity, dataCurse } from "@/Mock/Ingressantes";
+import { Button, Input, Select } from "@/components";
 
 const Form = () => {
   const router = useRouter();

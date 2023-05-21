@@ -1,8 +1,11 @@
 "use client";
 
 import React from "react";
-import ReactApexChart from "react-apexcharts";
 import { countCurse, labelCurse } from "@/Mock/dashboard";
+import dynamic from "next/dynamic";
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+  ssr: false,
+});
 
 const DonutPieChart: React.FC = () => {
   const series = countCurse;

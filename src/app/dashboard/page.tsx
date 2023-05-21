@@ -1,7 +1,11 @@
-import ColumnBasicChart from "./ColumnBasicChart";
-import SimpleDonutPie from "./DonutPieChart";
-import SplineAreaChart from "./SplineAreaChart";
-import TotalSubscribed from "./TotalSubscribed/page";
+"use client";
+
+import {
+  ColumnBasicChart,
+  DonutPieChart,
+  SplineAreaChart,
+  TotalSubscribed,
+} from "./components";
 
 export default function DashboardPage() {
   return (
@@ -13,11 +17,8 @@ export default function DashboardPage() {
           <div className="bg-blue-900" />
           <div className="bg-blue-900" />
           <TotalSubscribed />
-
           <ColumnBasicChart />
-
-          <SimpleDonutPie />
-
+          <DonutPieChart />
           <SplineAreaChart />
         </div>
       </div>
