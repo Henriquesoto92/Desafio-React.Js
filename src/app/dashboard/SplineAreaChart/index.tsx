@@ -2,7 +2,7 @@
 
 import React from "react";
 import ReactApexChart from "react-apexcharts";
-import { countCurse, countSubscribe, labelCurse } from "@/Mock/dashboard";
+import { countSubscribe, labelCurse } from "@/Mock/dashboard";
 
 const SplineAreaChart: React.FC = () => {
   const series = countSubscribe;
@@ -13,6 +13,7 @@ const SplineAreaChart: React.FC = () => {
         show: false,
       },
     },
+    colors: ["#269455", "#E08A32", "#131294"],
     labels: labelCurse,
     dataLabels: {
       enabled: false,
@@ -45,14 +46,16 @@ const SplineAreaChart: React.FC = () => {
   };
 
   return (
-    <div id="chart" className="w-full h-full p-5">
-      <ReactApexChart
-        options={options}
-        series={series}
-        type="area"
-        height="100%"
-        width="100%"
-      />
+    <div className="col-span-3 bg-white flex justify-center items-center px-4">
+      <div id="chart" className="w-full h-full p-5">
+        <ReactApexChart
+          options={options}
+          series={series}
+          type="area"
+          height="100%"
+          width="100%"
+        />
+      </div>
     </div>
   );
 };

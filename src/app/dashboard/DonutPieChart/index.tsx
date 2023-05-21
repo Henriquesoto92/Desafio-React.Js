@@ -14,6 +14,7 @@ const DonutPieChart: React.FC = () => {
     dataLabels: {
       enabled: false,
     },
+    colors: ["#269455", "#E08A32", "#131294"],
     legend: { show: true, position: "bottom", fontSize: "16px" },
 
     responsive: [
@@ -29,14 +30,16 @@ const DonutPieChart: React.FC = () => {
   };
 
   return (
-    <div id="chart">
-      <ReactApexChart
-        options={options}
-        series={series}
-        type="donut"
-        height="100%"
-        width="100%"
-      />
+    <div className="bg-white row-span-2 flex  justify-center pt-20">
+      <div id="chart">
+        <ReactApexChart
+          options={options}
+          series={series}
+          type="donut"
+          height="100%"
+          width="100%"
+        />
+      </div>
     </div>
   );
 };
