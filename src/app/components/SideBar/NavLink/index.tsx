@@ -1,6 +1,9 @@
+"use client";
+
+import React from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 type IProps = {
   href: string;
@@ -9,11 +12,15 @@ type IProps = {
 };
 
 const NavLink: React.FC<IProps> = (props) => {
+  const pathname = usePathname();
+
   return (
     <li>
       <Link
         href={props.href}
-        className="flex items-center bg-sky-800 gap-2 mx-5 p-2 hover:bg-sky-700 transition-all duration-300"
+        className={`flex items-center bg-sky-800 gap-2 mx-5 p-2 hover:brightness-125 transition-all duration-300 ${
+          pathname === props.href ? "brightness-125" : ""
+        }`}
       >
         <Image
           src={props.icon}

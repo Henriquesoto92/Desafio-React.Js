@@ -1,7 +1,12 @@
 import React from "react";
-import Avatar from "../Avatar";
-import Textbg from "../Textbg";
-import NavLink from "../NavLink";
+import Avatar from "./Avatar";
+import Textbg from "./Textbg";
+import NavLink from "./NavLink";
+
+const navLinkRoute = [
+  { href: "/", icon: "/assets/icons/iconHome.svg", text: "Home" },
+  { href: "/cadastro", icon: "/assets/icons/iconFolder.svg", text: "Cadastro" },
+];
 
 const SideBar: React.FC = () => {
   return (
@@ -18,17 +23,14 @@ const SideBar: React.FC = () => {
 
       <nav className="w-full">
         <ul className="flex flex-col gap-3">
-          <NavLink href="/" icon="/assets/icons/iconHome.svg" text="Home" />
-          <NavLink
-            href="/cadastro"
-            icon="/assets/icons/iconFolder.svg"
-            text="Cadastro"
-          />
-          <NavLink
-            href="/dashboard"
-            icon="/assets/icons/iconDashboard.svg"
-            text="Dashboard"
-          />
+          {navLinkRoute.map((item) => (
+            <NavLink
+              href={item.href}
+              icon={item.icon}
+              text={item.text}
+              key={item.text}
+            />
+          ))}
         </ul>
       </nav>
     </div>

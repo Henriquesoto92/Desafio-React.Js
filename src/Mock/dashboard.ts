@@ -1,7 +1,7 @@
 import { Subscribed } from "@/interface";
 
 const labelCurse = ["Matemática", "Letras", "Geografia"];
-const countCurse = [30, 20, 10];
+const countCurse = [40, 20, 10];
 const countSubscribe = [
   {
     name: "Matemática",
