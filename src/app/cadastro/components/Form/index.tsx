@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { dataCoutryCity, dataCurse } from "@/Mock/Ingressantes";
-import { Button, Input, Select } from "@/components";
+import Input from "../Input";
+import Select from "../Select";
+import Button from "../Button";
 
-const Form = () => {
+const Form: React.FC = () => {
   const router = useRouter();
   const [name, setName] = useState<string>("");
   const [CurseSelected, setCurseSelected] = useState<number>(1);

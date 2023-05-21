@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
-import { Hamburguer, SideBar } from "@/components";
+import { Hamburguer, SideBar } from "./components";
 
 export const metadata: Metadata = {
   title: "Desafio Murallis",
@@ -20,10 +20,10 @@ export default function RootLayout({
       <link rel="icon" href="/assets/favicon.ico" sizes="any" />
       <head />
       <body className={inter.className}>
-        <div className="flex min-h-screen flex-row items-center justify-start">
-          <div className="flex items-center justify-center w-full min-h-screen bg-slate-100">
-            <SideBar />
-            <Hamburguer />
+        <div className="flex min-h-screen w-full items-center justify-start bg-slate-100">
+          <SideBar />
+          <Hamburguer />
+          <div className="flex items-center justify-center w-full h-full">
             {children}
           </div>
         </div>
