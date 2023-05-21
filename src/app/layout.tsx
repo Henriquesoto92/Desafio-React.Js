@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex min-h-screen w-full items-center justify-start bg-slate-100">
           <SideBar />
-          <Hamburguer />
+          {/* <Hamburguer /> */}
           <div className="flex items-center justify-center w-full h-full">
             {children}
           </div>

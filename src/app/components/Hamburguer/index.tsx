@@ -10,8 +10,8 @@ const Hamburguer: React.FC<IProps> = (props) => {
       <Image
         src={"/assets/icons/iconMenu.svg"}
         alt={`icon Hamburger`}
-        width={20}
-        height={20}
+        width={50}
+        height={50}
       />
     </button>
   );
