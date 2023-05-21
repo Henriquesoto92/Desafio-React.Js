@@ -53,9 +53,8 @@ export default function RootLayout({
               </ul>
             </nav>
           </div>
-          <hr />
           <div className="flex items-center justify-center w-full min-h-screen bg-slate-100">
-            <Hamburguer />
+            {/* <Hamburguer /> */}
             {children}
           </div>
         </div>
