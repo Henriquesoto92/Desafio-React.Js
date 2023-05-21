@@ -15,7 +15,12 @@ const Form: React.FC = () => {
   const [citySelected, setCitySelected] = useState<number>(1);
 
   return (
-    <form className="flex gap-4 flex-col w-full rounded-sm">
+    <form
+      className="flex gap-4 flex-col w-full rounded-sm"
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <Input
         label="Nome"
         propsInput={{

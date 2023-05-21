@@ -29,7 +29,6 @@ O desafio tem por objetivo medir as capacidades técnicas, como por exemplo, ter
 - Gráfico de pizza com porcentagem de quantidade de inscritos por curso.
 - Opcional: adicionar os novos cadastrados no dashboard
 
-
 # 🚀**Inicialização**
 
 ## Rodando localmente
@@ -49,30 +48,28 @@ Entre no diretório do projeto
 Instale as dependências e inicie a Aplicação
 
 yarn:
- 
+
 ```bash
   yarn
   yarn dev
 ```
 
 npm:
- 
+
 ```bash
   npm i
   npm run dev
 ```
 
-
 # 🛠**Stack utilizada**
 
 **Front-end:**
 
-- [React + Next.js](https://nextjs.org/)
+- [Next.js](https://nextjs.org/)
 
 - [Tailwindcss](https://tailwindcss.com/)
 
 - [ApexCharts](https://apexcharts.com/docs/react-charts/)
-
 
 **LICENSE**
 
@@ -83,7 +80,7 @@ npm:
 [Henrique Soto](https://github.com/Henriquesoto92)
 [![MIT License](https://img.shields.io/github/followers/Henriquesoto92?style=social)](https://github.com/Henriquesoto92)
 
-
 ## 📸Screenshot
 
-![Screenshot]()
+![imagem do Dashboard](https://user-images.githubusercontent.com/96528794/239766245-00d36189-14c4-4651-bc2c-5c82e9ec95e3.png)
+![imagem do Cadastro](https://user-images.githubusercontent.com/96528794/239766228-da8e396c-e62f-4c11-85c5-39b1a96064a4.png)
